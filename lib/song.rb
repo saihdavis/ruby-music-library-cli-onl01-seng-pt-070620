@@ -7,9 +7,9 @@ class Song
   @@all = []
   
   #binding.pry 
-  def initialize(name, artist = nil)
-    @name = name
-    if artist != nil 
+  def initialize(name, artist = nil, genre = nil)
+    #@name = name
+    #if artist != nil 
       self.artist = artist
     save
   end
