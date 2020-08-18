@@ -21,6 +21,7 @@ end
   
   def artist=(artist)
     @artist = artist
+    song.
   end
   
   
