@@ -15,7 +15,9 @@ class Song
   end
 end
   
-  def 
+  def artist
+      
+  end
   
   
   def save 
