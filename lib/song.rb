@@ -24,7 +24,6 @@ end
     artist.add_song(self)
   end
   
-  
   def save 
     @@all << self 
   end
@@ -42,7 +41,5 @@ end
   def self.destroy_all
     self.all.clear
   end
-  
-  
   
 end
