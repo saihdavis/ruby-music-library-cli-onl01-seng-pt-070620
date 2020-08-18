@@ -1,8 +1,8 @@
 require 'pry'
-
+require_relative '../lib/concerns/findable'
 
 class Artist 
- 
+  extend Concerns::Findable
   
   attr_accessor :name, :songs
     @@all = []
@@ -11,6 +11,7 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
+    
   end
   
   def self.all
@@ -38,6 +39,8 @@ class Artist
        songs.push(song) unless songs.include? (song)
   end
   
-  
+  def genres
+    songs.collect {|s| s.genre}.uniq
+  end  
   
 end
