@@ -21,7 +21,7 @@ end
   
   def artist=(artist)
     @artist = artist
-    artist.add_song(song)
+    artist.add_song(self)
   end
   
   
