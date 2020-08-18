@@ -12,8 +12,8 @@ class Song
     if artist != nil 
       self.artist = artist
     end
-    save
-  end
+    
+  endsave
 end
   
   def artist
