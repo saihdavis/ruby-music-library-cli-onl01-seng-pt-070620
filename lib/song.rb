@@ -8,11 +8,11 @@ class Song
   
   #binding.pry 
   def initialize(name, artist = nil, genre = nil)
-    #@name = name
-    #if artist != nil 
-      #self.artist = artist
+    @name = name
+    if artist != nil 
+      self.artist = artist
     save
-  #end
+  end
 end
   
   def artist
